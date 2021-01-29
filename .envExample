@@ -2,3 +2,4 @@ FTP_USERNAME = <username>
 FTP_PASSWORD = <password>
 FTP_SERVER_IP = <server_ip>
 FTP_FILENAME = world.zip
+BACKUP_PATH = C:\workspace\server_backup\ftp_downloader\backups

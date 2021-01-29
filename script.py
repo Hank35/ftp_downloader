@@ -20,8 +20,9 @@ def download(ftp):
     downloads the world.zip file from main directory, fix file path for your needs
     """
     file = os.getenv('FTP_FILENAME')
-    downloadpath = 'backups/' + file
+    downloadpath = os.getenv('BACKUP_PATH') + f'/{file}'
     ftp.retrbinary('RETR ' + file ,open(downloadpath, 'wb').write)
+
 
 def main():
     ftp = login()
